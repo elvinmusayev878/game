@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Menim oyun saytim</title>
+</head>
+
+<body>
+
+<h1>Rəqəmi tap oyunu</h1>
+
+<p>1-dən 10-a qədər rəqəm seçdim. Tap görüm.</p>
+
+<input id="reqem">
+<button onclick="yoxla()">Yoxla</button>
+
+<p id="netice"></p>
+
+<script>
+var gizli = 5;
+
+function yoxla(){
+var yazilan = document.getElementById("reqem").value;
+
+if(yazilan == gizli){
+document.getElementById("netice").innerHTML="Duz tapdın!";
+}else{
+document.getElementById("netice").innerHTML="Yanlis, tekrar yoxla";
+}
+}
+</script>
+
+</body>
+</html>
